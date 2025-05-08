@@ -1,0 +1,44 @@
+[
+    {
+        "model": "forms.NewOSCFormMealType",
+        "pk": 1,
+        "fields":{
+            "name": "Café da manhã"
+        }
+    },
+    {
+        "model": "forms.NewOSCFormMealType",
+        "pk": 2,
+        "fields":{
+            "name": "Lanche da manhã"
+        }
+    },
+    {
+        "model": "forms.NewOSCFormMealType",
+        "pk": 3,
+        "fields":{
+            "name": "Almoço"
+        }
+    },
+    {
+        "model": "forms.NewOSCFormMealType",
+        "pk": 4,
+        "fields":{
+            "name": "Lanche da tarde"
+        }
+    },
+    {
+        "model": "forms.NewOSCFormMealType",
+        "pk": 5,
+        "fields":{
+            "name": "Jantar"
+        }
+    },
+    {
+        "model": "forms.NewOSCFormMealType",
+        "pk": 6,
+        "fields":{
+            "name": "Ceia"
+        }
+    }
+]

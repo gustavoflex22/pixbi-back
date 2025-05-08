@@ -1,0 +1,26 @@
+[
+    {
+        "model": "forms.NewOSCFormFoodDistributionType",
+        "pk": 1,
+        "fields":{
+            "name": "Cestas Básicas",
+            "default": true
+        }
+    },
+    {
+        "model": "forms.NewOSCFormFoodDistributionType",
+        "pk": 2,
+        "fields":{
+            "name": "Kit/ Sacolinha de frutas, legumes, verduras",
+            "default": true
+        }
+    },
+    {
+        "model": "forms.NewOSCFormFoodDistributionType",
+        "pk": 3,
+        "fields":{
+            "name": "Marmitas/ Quentinhas",
+            "default": true
+        }
+    }
+]

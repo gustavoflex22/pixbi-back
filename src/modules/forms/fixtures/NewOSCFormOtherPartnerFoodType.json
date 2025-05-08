@@ -1,0 +1,50 @@
+[
+    {
+        "model": "forms.NewOSCFormOtherPartnerFoodType",
+        "pk": 1,
+        "fields":{
+            "name": "Frutas",
+            "default": true
+        }
+    },
+    {
+        "model": "forms.NewOSCFormOtherPartnerFoodType",
+        "pk": 2,
+        "fields":{
+            "name": "Legumes",
+            "default": true
+        }
+    },
+    {
+        "model": "forms.NewOSCFormOtherPartnerFoodType",
+        "pk": 3,
+        "fields":{
+            "name": "Verduras",
+            "default": true
+        }
+    },
+    {
+        "model": "forms.NewOSCFormOtherPartnerFoodType",
+        "pk": 4,
+        "fields":{
+            "name": "Mercearia (Arroz, Feijão, Café, etc...)",
+            "default": true
+        }
+    },
+    {
+        "model": "forms.NewOSCFormOtherPartnerFoodType",
+        "pk": 5,
+        "fields":{
+            "name": "Carnes",
+            "default": true
+        }
+    },
+    {
+        "model": "forms.NewOSCFormOtherPartnerFoodType",
+        "pk": 6,
+        "fields":{
+            "name": "Pães",
+            "default": true
+        }
+    }
+]

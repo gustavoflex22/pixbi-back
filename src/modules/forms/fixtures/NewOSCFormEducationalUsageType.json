@@ -1,0 +1,27 @@
+
+[
+    {
+        "model": "forms.NewOSCFormEducationalUsageType",
+        "pk": 1,
+        "fields":{
+            "name": "Cursos Profissionalizantes",
+            "default": true
+        }
+    },
+    {
+        "model": "forms.NewOSCFormEducationalUsageType",
+        "pk": 2,
+        "fields":{
+            "name": "Oficinas",
+            "default": true
+        }
+    },
+    {
+        "model": "forms.NewOSCFormEducationalUsageType",
+        "pk": 3,
+        "fields":{
+            "name": "Palestras",
+            "default": true
+        }
+    }
+]

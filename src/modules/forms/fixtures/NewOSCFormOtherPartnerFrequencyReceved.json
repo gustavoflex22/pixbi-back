@@ -1,0 +1,82 @@
+[
+    {
+        "model": "forms.NewOSCFormOtherPartnerFrequencyReceved",
+        "pk": 1,
+        "fields":{
+            "name": "1 vez por semana",
+            "default": true
+        }
+    },
+    {
+        "model": "forms.NewOSCFormOtherPartnerFrequencyReceved",
+        "pk": 2,
+        "fields":{
+            "name": "2 vezes por semana",
+            "default": true
+        }
+    },
+    {
+        "model": "forms.NewOSCFormOtherPartnerFrequencyReceved",
+        "pk": 3,
+        "fields":{
+            "name": "3 vezes por semana",
+            "default": true
+        }
+    },
+    {
+        "model": "forms.NewOSCFormOtherPartnerFrequencyReceved",
+        "pk": 4,
+        "fields":{
+            "name": "4 vezes por semana",
+            "default": true
+        }
+    },
+    {
+        "model": "forms.NewOSCFormOtherPartnerFrequencyReceved",
+        "pk": 5,
+        "fields":{
+            "name": "5 vezes por semana",
+            "default": true
+        }
+    },
+    {
+        "model": "forms.NewOSCFormOtherPartnerFrequencyReceved",
+        "pk": 6,
+        "fields":{
+            "name": "6 vezes por semana",
+            "default": true
+        }
+    },
+    {
+        "model": "forms.NewOSCFormOtherPartnerFrequencyReceved",
+        "pk": 7,
+        "fields":{
+            "name": "7 vezes por semana",
+            "default": true
+        }
+    },
+    {
+        "model": "forms.NewOSCFormOtherPartnerFrequencyReceved",
+        "pk": 8,
+        "fields":{
+            "name": "Uma vez a cada 15 dias",
+            "default": true
+        }
+    },
+    {
+        "model": "forms.NewOSCFormOtherPartnerFrequencyReceved",
+        "pk": 9,
+        "fields":{
+            "name": "Uma vez por mês",
+            "default": true
+        }
+    },
+    {
+        "model": "forms.NewOSCFormOtherPartnerFrequencyReceved",
+        "pk": 10,
+        "fields":{
+            "name": "Não possui frequência determinada",
+            "default": true
+        }
+    }
+]

@@ -1,0 +1,34 @@
+[
+    {
+        "model": "forms.NewOSCFormOtherPartnerType",
+        "pk": 1,
+        "fields":{
+            "name": "Sesc Mesa Brasil",
+            "default": true
+        }
+    },
+    {
+        "model": "forms.NewOSCFormOtherPartnerType",
+        "pk": 2,
+        "fields":{
+            "name": "Banco de Alimentos",
+            "default": true
+        }
+    },
+    {
+        "model": "forms.NewOSCFormOtherPartnerType",
+        "pk": 3,
+        "fields":{
+            "name": "Pessoas Físicas",
+            "default": true
+        }
+    },
+    {
+        "model": "forms.NewOSCFormOtherPartnerType",
+        "pk": 4,
+        "fields":{
+            "name": "Prefeitura/ Governo Estadual / Governo Federal",
+            "default": true
+        }
+    }
+]

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <form class="form-control" method="post">
+                    {% csrf_token %}
+                    
+                    <small class="text-muted cep_data"></small>
+                    <p class="text-danger cnpj-error-field"></p>
+                    <button class="btn btn-success btn-lg submit-button"
+                            type="submit">Mandar
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+    <script>
+
+        const getCNPJData = (cnpj) => {
+            const cleanCNPJ = cnpj.replace(/[^0-9]/g, '');
+            const CNPJAPI = `https://api-publica.speedio.com.br/buscarcnpj?cnpj=${cleanCNPJ}`
+            $(".submit-button").prop("disabled", true);
+            $.getJSON(CNPJAPI, (data) => {
+                $(".submit-button").prop("disabled", false);
+                if (Object.keys(data).includes("error")){
+                    const error_message = data.error
+                    $(".cnpj-error-field").text(error_message)
+                }else{
+                    $(".cnpj-error-field").text('')
+                    const CNPJName = data['RAZAO SOCIAL']
+                    console.log(CNPJName)
+                    $("#nome_field").val(CNPJName)
+                }
+                console.log(data)
+            })
+        }
+
+        const getCEPData = (cep) => {
+            const cleanCEP = cep.replace(/[^0-9]/g, '');
+            const CEPAPI = `https://viacep.com.br/ws/${cleanCEP}/json/`
+            $(".submit-button").prop("disabled", true);
+            $.getJSON(CEPAPI, (data) => {
+                $(".submit-button").prop("disabled", false);
+                if (Object.keys(data).includes("erro")){
+                    const error_message = "cep nao encontrado"
+                    $(".cnpj-error-field").text(error_message)
+                    $(".cep_data").text('')
+                }else{
+                    $(".cnpj-error-field").text('')
+                    const cep_data_formatted = `${data.logradouro}, ${data.bairro}, ${data.localidade}`
+                    $(".cep_data").text(cep_data_formatted)
+                }
+                console.log(data)
+            })
+
+        }
+
+        $( document ).ready(function() {
+            
+            $("#cnpj_field").mask('00.000.000/0000-00')
+            $("#cep_field").mask('00000-000')
+
+            $("#cnpj_field").on("input", (e) => {
+                let inputValue = e.target.value
+                if (inputValue.length == 18){
+                    getCNPJData(inputValue)
+                }
+            })
+            $("#cep_field").on("input", (e) => {
+                let inputValue = e.target.value
+                if (inputValue.length == 9){
+                    getCEPData(inputValue)
+                }
+            })
+        });
+    </script>
+</body>
+</html>

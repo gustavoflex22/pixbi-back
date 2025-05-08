@@ -1,0 +1,131 @@
+
+[
+    {
+        "model": "forms.NewOSCFormTargetAudience",
+        "pk": 1,
+        "fields":{
+            "name": "Crianças",
+            "default": true
+        }
+    },
+    {
+        "model": "forms.NewOSCFormTargetAudience",
+        "pk": 2,
+        "fields":{
+            "name": "Pessoas com dependência química",
+            "default": true
+        }
+    },
+    {
+        "model": "forms.NewOSCFormTargetAudience",
+        "pk": 3,
+        "fields":{
+            "name": "Famílias em vulnerabilidade",
+            "default": true
+        }
+    },
+    {
+        "model": "forms.NewOSCFormTargetAudience",
+        "pk": 4,
+        "fields":{
+            "name": "Imigrantes",
+            "default": true
+        }
+    },
+    {
+        "model": "forms.NewOSCFormTargetAudience",
+        "pk": 5,
+        "fields":{
+            "name": "Indígenas",
+            "default": true
+        }
+    },
+    {
+        "model": "forms.NewOSCFormTargetAudience",
+        "pk": 6,
+        "fields":{
+            "name": "Mulheres",
+            "default": true
+        }
+    },
+    {
+        "model": "forms.NewOSCFormTargetAudience",
+        "pk": 7,
+        "fields":{
+            "name": "Afrodescendentes",
+            "default": true
+        }
+    },
+    {
+        "model": "forms.NewOSCFormTargetAudience",
+        "pk": 8,
+        "fields":{
+            "name": "Pessoas com câncer",
+            "default": true
+        }
+    },
+    {
+        "model": "forms.NewOSCFormTargetAudience",
+        "pk": 9,
+        "fields":{
+            "name": "Pessoas com deficiência",
+            "default": true
+        }
+    },
+    {
+        "model": "forms.NewOSCFormTargetAudience",
+        "pk": 10,
+        "fields":{
+            "name": "Pessoas em situação de rua",
+            "default": true
+        }
+    },
+    {
+        "model": "forms.NewOSCFormTargetAudience",
+        "pk": 11,
+        "fields":{
+            "name": "Pessoas com HIV",
+            "default": true
+        }
+    },
+    {
+        "model": "forms.NewOSCFormTargetAudience",
+        "pk": 12,
+        "fields":{
+            "name": "Quilombolas",
+            "default": true
+        }
+    },
+    {
+        "model": "forms.NewOSCFormTargetAudience",
+        "pk": 13,
+        "fields":{
+            "name": "Refugiados",
+            "default": true
+        }
+    },
+    {
+        "model": "forms.NewOSCFormTargetAudience",
+        "pk": 14,
+        "fields":{
+            "name": "Mães solo/solteiras",
+            "default": true
+        }
+    },
+    {
+        "model": "forms.NewOSCFormTargetAudience",
+        "pk": 15,
+        "fields":{
+            "name": "Pessoas vítimas de violência",
+            "default": true
+        }
+    },
+    {
+        "model": "forms.NewOSCFormTargetAudience",
+        "pk": 16,
+        "fields":{
+            "name": "Pessoas LGBTQIAPNB+",
+            "default": true
+        }
+    }
+]

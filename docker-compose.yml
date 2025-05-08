@@ -1,0 +1,25 @@
+version: '3'
+# chown 10001 data/ && chown 10001 data/mssql/
+services:
+  db:
+    image: 'mcr.microsoft.com/mssql/server:2019-latest'
+    environment:
+      MSSQL_SA_PASSWORD: "SqlServer2019!"
+      ACCEPT_EULA: "Y"
+      MYSQL_PID: "Developer"
+    ports:
+      - "1433:1433"
+    volumes:
+      - ./data/mssql:/var/opt/mssql/data
+    networks:
+      - warehouse-network
+  redis:
+    image: redis
+    command: redis-server --requirepass Redis2019!
+    ports:
+      - "6379:6379"
+    networks:
+      - warehouse-network
+networks:
+  warehouse-network:
+

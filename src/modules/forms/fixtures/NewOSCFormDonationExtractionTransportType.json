@@ -1,0 +1,19 @@
+
+[
+    {
+        "model": "forms.NewOSCFormDonationExtractionTransportType",
+        "pk": 1,
+        "fields":{
+            "name": "Transporte próprio",
+            "default": true
+        }
+    },
+    {
+        "model": "forms.NewOSCFormDonationExtractionTransportType",
+        "pk": 2,
+        "fields":{
+            "name": "Transporte de terceiros",
+            "default": true
+        }
+    }
+]
